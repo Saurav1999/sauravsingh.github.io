@@ -1,0 +1,136 @@
+.home {
+  width: 100%;
+  height: 80vh;
+  margin-top: 12rem;
+  display: flex;
+  &__main {
+    width: 75%;
+    height: 100%;
+    margin: 0 auto;
+    // background-color: red;
+  }
+  &__intro {
+    margin: 6rem 0;
+    width: 80%;
+    &__greeting {
+      font-size: 3rem;
+      font-weight: 700;
+      color: #8064da;
+      letter-spacing: .2rem;
+    }
+    &__name {
+      font-size: 8rem;
+      font-weight: 600;
+      // line-height: 10rem;
+      // font-family: "Cabin", sans-serif;
+      font-family: 'Product Sans Regular', 'Open Sans', sans-serif;
+      //   font-family: "Yusei Magic", sans-serif;
+      // letter-spacing: 0.5rem;
+    }
+    &__designation {
+      font-size: 5rem;
+      font-weight: 700;
+      // font-family: "Yusei Magic", sans-serif;
+      font-family: 'Product Sans Regular', 'Open Sans', sans-serif;
+      line-height: 6rem;
+      & span {
+        color: #8064da;
+      }
+    }
+    &__specialization {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #838383;
+      line-height: 3.5rem;
+      margin-top: 3rem;
+      letter-spacing: 0.2rem;
+    }
+  }
+  & .social {
+    
+    min-width: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 2rem;
+
+    &-icons-container {
+      display: flex;
+
+      margin-top: 1.8rem;
+      align-items: center;
+      justify-content: flex-end;
+      width: 100%;
+      
+      #social-text {
+        font-size: 1.6rem;
+        font-weight: 700;
+        opacity:0;
+        transform: translateX(20px);
+        order: 1;
+        transition: all .5s ease;
+      }
+      #social-icons{
+        order: 2;
+        margin-left: 2rem;
+        
+        
+       
+      }
+      // #social-icons:hover{
+      //   color: blue;
+      //   // background-color: white;
+      // }
+      .fa-github:hover{
+        color: white;
+        background-color: black;
+      }
+      .fa-facebook-f:hover{
+        background-color: #1877f2;
+        color:white ;
+      }
+      .fa-linkedin-in:hover{
+        color:white;
+        background-color:#0073b1;
+      }
+
+      #social-icons:hover ~ #social-text {
+        // display: block;
+        opacity: 1;
+        transform: translateX(0px);
+      }
+      .github{
+        color: white;
+      }
+      .linkedin{
+        color:#0073b1;
+      }
+      .facebook{
+        color: #1877f2;
+      }
+   
+      
+    }
+    & i {
+      font-size: 2.5rem;
+      min-width: 3rem;
+      height: 3rem;
+      padding: 3px;
+      text-align: center;
+      border-radius: .8rem;
+      background-color: white;
+      color: black;
+      outline: none;
+      border: none;
+      backface-visibility: hidden;
+
+      transition: all 0.5s ease;
+      cursor: pointer;
+
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+}

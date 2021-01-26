@@ -1,0 +1,19 @@
+.home__intro__designation  span.cursor {
+    display: inline-block;
+    background-color:#fff;
+    margin-left: .2rem;
+    width: 3px;
+    animation: blink 1s infinite;
+    height: 6rem;
+
+  }
+  .home__intro__designation  span.cursor.typing {
+    animation: none;
+  }
+  @keyframes blink {
+    0%  { background-color: #fff; }
+    49% { background-color: #fff; }
+    50% { background-color: transparent; }
+    99% { background-color: transparent; }
+    100%  { background-color: #fff; }
+  }
