@@ -1,29 +1,38 @@
 .home {
   width: 100%;
-  height: 80vh;
-  margin-top: 12rem;
+  height: 100vh;
+  min-height: 100vh;
+  margin: 0rem 5rem;
+  // margin-top: 12rem;
+  // overflow: hidden;
   display: flex;
   &__main {
-    width: 75%;
+    width: 100%;
     height: 100%;
-    margin: 0 auto;
+    min-height: 100rem;
+    // margin:  7rem 0;
     // background-color: red;
+    display: flex;
+    // justify-content: center;
   }
   &__intro {
-    margin: 6rem 0;
+    // margin: 6rem 0;
+    align-self: center;
+    height: max-content;
     width: 80%;
+    // margin: auto 0;
     &__greeting {
       font-size: 3rem;
       font-weight: 700;
       color: #8064da;
-      letter-spacing: .2rem;
+      letter-spacing: 0.2rem;
     }
     &__name {
       font-size: 8rem;
       font-weight: 600;
       // line-height: 10rem;
       // font-family: "Cabin", sans-serif;
-      font-family: 'Product Sans Regular', 'Open Sans', sans-serif;
+      font-family: "Product Sans Regular", "Open Sans", sans-serif;
       //   font-family: "Yusei Magic", sans-serif;
       // letter-spacing: 0.5rem;
     }
@@ -31,7 +40,7 @@
       font-size: 5rem;
       font-weight: 700;
       // font-family: "Yusei Magic", sans-serif;
-      font-family: 'Product Sans Regular', 'Open Sans', sans-serif;
+      font-family: "Product Sans Regular", "Open Sans", sans-serif;
       line-height: 6rem;
       & span {
         color: #8064da;
@@ -47,13 +56,15 @@
     }
   }
   & .social {
-    
-    min-width: 15rem;
+    position: fixed;
+    // min-width: 15rem;
+    bottom: 5rem;
+    right: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    padding: 2rem;
+    padding: 0.5rem;
 
     &-icons-container {
       display: flex;
@@ -62,37 +73,34 @@
       align-items: center;
       justify-content: flex-end;
       width: 100%;
-      
+
       #social-text {
         font-size: 1.6rem;
         font-weight: 700;
-        opacity:0;
+        opacity: 0;
         transform: translateX(20px);
         order: 1;
-        transition: all .5s ease;
+        transition: all 0.5s ease;
       }
-      #social-icons{
+      #social-icons {
         order: 2;
         margin-left: 2rem;
-        
-        
-       
       }
       // #social-icons:hover{
       //   color: blue;
       //   // background-color: white;
       // }
-      .fa-github:hover{
+      .fa-github:hover {
         color: white;
         background-color: black;
       }
-      .fa-facebook-f:hover{
+      .fa-facebook-f:hover {
         background-color: #1877f2;
-        color:white ;
+        color: white;
       }
-      .fa-linkedin-in:hover{
-        color:white;
-        background-color:#0073b1;
+      .fa-linkedin-in:hover {
+        color: white;
+        background-color: #0073b1;
       }
 
       #social-icons:hover ~ #social-text {
@@ -100,17 +108,15 @@
         opacity: 1;
         transform: translateX(0px);
       }
-      .github{
+      .github {
         color: white;
       }
-      .linkedin{
-        color:#0073b1;
+      .linkedin {
+        color: #0073b1;
       }
-      .facebook{
+      .facebook {
         color: #1877f2;
       }
-   
-      
     }
     & i {
       font-size: 2.5rem;
@@ -118,7 +124,7 @@
       height: 3rem;
       padding: 3px;
       text-align: center;
-      border-radius: .8rem;
+      border-radius: 0.8rem;
       background-color: white;
       color: black;
       outline: none;
@@ -130,6 +136,78 @@
 
       &:hover {
         transform: scale(1.2);
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1400px) {
+  .home {
+    margin: 0;
+    &__intro {
+      // margin: 6rem 0;
+      align-self: center;
+      height: max-content;
+      width: 100%;
+    }
+  }
+}
+@media only screen and (max-width: 1100px) {
+  .home {
+    margin: 0;
+    &__intro {
+      width: 100%;
+      &__greeting {
+        font-size: 4rem;
+        font-weight: 700;
+        color: #8064da;
+        letter-spacing: 0.2rem;
+      }
+      &__name {
+        margin: 4rem 0;
+      }
+      &__designation {
+        font-size: 5.5rem;
+      
+      }
+      &__specialization {
+        font-size: 3.5rem;
+        font-weight: 700;
+        color: #838383;
+        line-height:5.5rem;
+        margin: 4rem 0;
+        letter-spacing: 0.3rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+ 
+  .home {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    &__intro {
+      
+      &__greeting {
+        font-size: 3.5rem;
+      
+    
+      }
+      &__name {
+        margin: 5rem 0;
+      }
+      &__designation {
+        font-size: 5rem;
+      
+      }
+      &__specialization {
+        font-size: 3.5rem;
+        font-weight: 700;
+        color: #838383;
+        line-height:5rem;
+        margin: 6rem 0;
+        letter-spacing: 0.3rem;
       }
     }
   }

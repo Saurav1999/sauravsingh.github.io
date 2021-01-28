@@ -8,10 +8,10 @@
   }
   &__button {
     background-color: #fff;
-    height: 6rem;
-    width: 6rem;
+    height: 5rem;
+    width: 5rem;
     position: fixed;
-    top: 1.8rem;
+    top: 2rem;
     right: 6rem;
     z-index: 2000;
     border-radius: 50%;
@@ -20,9 +20,9 @@
     cursor: pointer;
   }
   &__background {
-    height: 5rem;
+    height: 4rem;
     border-radius: 50%;
-    width: 5rem;
+    width: 4rem;
     background-image: radial-gradient(#8064da, #5e3bd0);
     position: fixed;
     top: 2.3rem;
@@ -57,8 +57,9 @@
   &__link {
     &:link,
     &:visited {
+      pointer-events: none;
       display: inline-block;
-      font-size: 3rem;
+      font-size: 2.5rem;
       font-weight: 300;
       color: #fff;
       padding: 1rem 2rem;
@@ -89,11 +90,14 @@
     opacity: 1;
     width: 100%;
   }
+  &__checkbox:checked ~ &__nav &__link {
+    pointer-events: all;
+  }
   //ICON
   &__icon {
     transition: all 0.4s ease-out;
     position: relative;
-    margin-top: 3rem;
+    margin-top: 2.5rem;
     &,
     &::before,
     &::after {
