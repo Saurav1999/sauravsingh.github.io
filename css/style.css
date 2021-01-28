@@ -317,7 +317,7 @@ body::-webkit-scrollbar-thumb {
 .home__main {
   width: 100%;
   height: 100%;
-  min-height: 100rem;
+  min-height: 60rem;
   display: flex;
 }
 .home__intro {
@@ -443,26 +443,6 @@ body::-webkit-scrollbar-thumb {
   .home__intro {
     width: 100%;
   }
-  .home__intro__greeting {
-    font-size: 4rem;
-    font-weight: 700;
-    color: #8064da;
-    letter-spacing: 0.2rem;
-  }
-  .home__intro__name {
-    margin: 4rem 0;
-  }
-  .home__intro__designation {
-    font-size: 5.5rem;
-  }
-  .home__intro__specialization {
-    font-size: 3.5rem;
-    font-weight: 700;
-    color: #838383;
-    line-height: 5.5rem;
-    margin: 4rem 0;
-    letter-spacing: 0.3rem;
-  }
 }
 @media only screen and (max-width: 800px) {
   .home {
@@ -471,21 +451,16 @@ body::-webkit-scrollbar-thumb {
     justify-content: center;
   }
   .home__intro__greeting {
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
   .home__intro__name {
-    margin: 5rem 0;
+    font-size: 8rem;
   }
   .home__intro__designation {
     font-size: 5rem;
   }
   .home__intro__specialization {
-    font-size: 3.5rem;
-    font-weight: 700;
-    color: #838383;
-    line-height: 5rem;
-    margin: 6rem 0;
-    letter-spacing: 0.3rem;
+    font-size: 2rem;
   }
 }
 .navigation {

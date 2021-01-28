@@ -9,7 +9,7 @@
   &__main {
     width: 100%;
     height: 100%;
-    min-height: 100rem;
+    min-height: 60rem;
     // margin:  7rem 0;
     // background-color: red;
     display: flex;
@@ -58,6 +58,7 @@
   & .social {
     position: fixed;
     // min-width: 15rem;
+    // min-height: 50rem;
     bottom: 5rem;
     right: 2rem;
     display: flex;
@@ -156,27 +157,7 @@
     margin: 0;
     &__intro {
       width: 100%;
-      &__greeting {
-        font-size: 4rem;
-        font-weight: 700;
-        color: #8064da;
-        letter-spacing: 0.2rem;
-      }
-      &__name {
-        margin: 4rem 0;
-      }
-      &__designation {
-        font-size: 5.5rem;
-      
-      }
-      &__specialization {
-        font-size: 3.5rem;
-        font-weight: 700;
-        color: #838383;
-        line-height:5.5rem;
-        margin: 4rem 0;
-        letter-spacing: 0.3rem;
-      }
+    
     }
   }
 }
@@ -190,24 +171,20 @@
     &__intro {
       
       &__greeting {
-        font-size: 3.5rem;
-      
-    
+        font-size: 3rem;
+        
       }
       &__name {
-        margin: 5rem 0;
+        font-size: 8rem;
+      
       }
       &__designation {
         font-size: 5rem;
-      
+     
       }
       &__specialization {
-        font-size: 3.5rem;
-        font-weight: 700;
-        color: #838383;
-        line-height:5rem;
-        margin: 6rem 0;
-        letter-spacing: 0.3rem;
+        font-size: 2rem;
+      
       }
     }
   }
