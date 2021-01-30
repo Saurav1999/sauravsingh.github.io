@@ -87,11 +87,11 @@ body::-webkit-scrollbar-thumb {
 }
 .nav-item-container .nav-logo h1 {
   font-family: "Fira Mono", monospace;
-  font-weight: 400;
+  font-weight: 600;
 }
 .nav-item-container .nav-logo span {
   color: #8064da;
-  margin: 0 0.5rem;
+  margin: 0.5rem;
 }
 .nav-item-container .nav-links {
   display: flex;
@@ -211,7 +211,7 @@ body::-webkit-scrollbar-thumb {
 .resume-download-btn {
   position: fixed;
   top: 3rem;
-  right: 10rem;
+  right: 11rem;
   display: none;
   border: none;
   font-size: 1.8rem;

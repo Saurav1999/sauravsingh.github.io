@@ -25,11 +25,11 @@
 
     & h1 {
       font-family: "Fira Mono", monospace;
-      font-weight: 400;
+      font-weight: 600;
     }
     & span {
       color: #8064da;
-      margin: 0 .5rem;
+      margin: .5rem;
       // font-weight: 700;
     }
   }
@@ -171,7 +171,7 @@
 .resume-download-btn {
   position: fixed;
   top: 3rem;
-  right: 10rem;
+  right: 11rem;
   display: none;
   // z-index: 5000;
   border: none;
