@@ -211,7 +211,7 @@ body::-webkit-scrollbar-thumb {
 .resume-download-btn {
   position: fixed;
   top: 3rem;
-  right: 15rem;
+  right: 10rem;
   display: none;
   border: none;
   font-size: 1.8rem;
