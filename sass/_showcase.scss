@@ -14,17 +14,20 @@
     min-height: 60rem;
     // margin:  7rem 0;
     // background-color: red;
-    display: flex;
+    display: grid;
     // justify-content: center;
+    place-items: center;
   }
   &__intro {
-    // margin: 6rem 0;
+    margin: 10rem 0;
     align-self: center;
-    height: 70%;
+    // height: 70%;
     width: 80%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 4rem 7rem 11rem minmax(2.3rem, auto);
+    align-items: center;
+    grid-gap: 2rem;
 
     // margin: auto 0;
     &__greeting {
@@ -58,9 +61,12 @@
     &__specialization {
       font-size: 2.3rem;
       font-weight: 700;
+      font-stretch: semi-expanded;
       color: #838383;
-      line-height: 3.5rem;
+      // line-height: 3.5rem;
       margin-top: 3rem;
+      transform: scaleY(1.2);
+      z-index: -2;
       // letter-spacing: 0.2rem;
     }
   }

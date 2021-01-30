@@ -68,7 +68,7 @@ body::-webkit-scrollbar-thumb {
   width: 100%;
   top: 0;
   left: 0;
-  height: 10rem;
+  height: 8rem;
   background: black;
   font-family: "Fira Mono", monospace;
   color: #f2f2f2;
@@ -328,15 +328,18 @@ body::-webkit-scrollbar-thumb {
   width: 100%;
   height: 100%;
   min-height: 60rem;
-  display: flex;
+  display: grid;
+  place-items: center;
 }
 .home__intro {
+  margin: 10rem 0;
   align-self: center;
-  height: 70%;
   width: 80%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 4rem 7rem 11rem minmax(2.3rem, auto);
+  align-items: center;
+  grid-gap: 2rem;
 }
 .home__intro__greeting {
   font-size: 3rem;
@@ -360,9 +363,11 @@ body::-webkit-scrollbar-thumb {
 .home__intro__specialization {
   font-size: 2.3rem;
   font-weight: 700;
+  font-stretch: semi-expanded;
   color: #838383;
-  line-height: 3.5rem;
   margin-top: 3rem;
+  transform: scaleY(1.2);
+  z-index: -2;
 }
 .home .social {
   position: fixed;
@@ -483,7 +488,7 @@ body::-webkit-scrollbar-thumb {
   width: 5rem;
   position: fixed;
   top: 2rem;
-  right: 6rem;
+  right: 2.5rem;
   z-index: 2000;
   border-radius: 50%;
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
@@ -497,7 +502,7 @@ body::-webkit-scrollbar-thumb {
   background-image: radial-gradient(#8064da, #5e3bd0);
   position: fixed;
   top: 2.3rem;
-  right: 6.5rem;
+  right: 3rem;
   z-index: 1000;
   transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
 }
