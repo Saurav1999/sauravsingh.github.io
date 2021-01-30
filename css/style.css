@@ -17,7 +17,6 @@ body {
   background: black;
   color: #eaeaea;
   box-sizing: border-box;
-  line-height: 1.7;
   padding: 0 10rem;
   display: grid;
   place-items: center;
@@ -319,13 +318,13 @@ body::-webkit-scrollbar-thumb {
   width: 100%;
   height: 100vh;
   min-height: 100vh;
-  margin: 0rem 5rem;
+  margin: 0rem auto;
   font-weight: 700;
   font-family: "Fira Mono", monospace;
-  display: flex;
+  display: grid;
+  place-items: center;
 }
 .home__main {
-  width: 100%;
   height: 100%;
   min-height: 60rem;
   display: grid;
@@ -334,10 +333,8 @@ body::-webkit-scrollbar-thumb {
 .home__intro {
   margin: 10rem 0;
   align-self: center;
-  width: 80%;
   display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: 4rem 7rem 11rem minmax(2.3rem, auto);
+  grid-template-columns: auto;
   align-items: center;
   grid-gap: 2rem;
 }

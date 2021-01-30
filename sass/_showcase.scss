@@ -2,14 +2,15 @@
   width: 100%;
   height: 100vh;
   min-height: 100vh;
-  margin: 0rem 5rem;
+  margin: 0rem auto;
   font-weight: 700;
   font-family: "Fira Mono", monospace;
   // margin-top: 12rem;
   // overflow: hidden;
-  display: flex;
+  display: grid;
+  place-items: center;
   &__main {
-    width: 100%;
+    // width: 100%;
     height: 100%;
     min-height: 60rem;
     // margin:  7rem 0;
@@ -22,10 +23,10 @@
     margin: 10rem 0;
     align-self: center;
     // height: 70%;
-    width: 80%;
+    // width: 80%;
     display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 4rem 7rem 11rem minmax(2.3rem, auto);
+    grid-template-columns: auto;
+    // grid-template-rows: 4rem 7rem 11rem minmax(2.3rem, auto);
     align-items: center;
     grid-gap: 2rem;
 
