@@ -13,10 +13,12 @@ html {
 body {
   font-family: "Open Sans", sans-serif;
   background: black;
-  color: white;
+  color: #eaeaea;
   box-sizing: border-box;
   line-height: 1.7;
   padding: 0 10rem;
+  display: grid;
+  place-items: center;
   // min-height: 100rem;
   // font-size: 3rem;
   // overflow: hidden;

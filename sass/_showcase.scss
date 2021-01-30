@@ -3,6 +3,8 @@
   height: 100vh;
   min-height: 100vh;
   margin: 0rem 5rem;
+  font-weight: 700;
+  font-family: "Fira Mono", monospace;
   // margin-top: 12rem;
   // overflow: hidden;
   display: flex;
@@ -18,21 +20,26 @@
   &__intro {
     // margin: 6rem 0;
     align-self: center;
-    height: max-content;
+    height: 70%;
     width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
     // margin: auto 0;
     &__greeting {
       font-size: 3rem;
-      font-weight: 700;
+      // font-weight: 700;
       color: #8064da;
-      letter-spacing: 0.2rem;
+      // letter-spacing: 0.2rem;
     }
     &__name {
-      font-size: 8rem;
-      font-weight: 600;
+      font-size: 7rem;
+      // font-weight: 600;
       // line-height: 10rem;
       // font-family: "Cabin", sans-serif;
       font-family: "Product Sans Regular", "Open Sans", sans-serif;
+      font-stretch: semi-expanded;
       //   font-family: "Yusei Magic", sans-serif;
       // letter-spacing: 0.5rem;
     }
@@ -42,17 +49,19 @@
       // font-family: "Yusei Magic", sans-serif;
       font-family: "Product Sans Regular", "Open Sans", sans-serif;
       line-height: 6rem;
+      flex: .5;
+
       & span {
         color: #8064da;
       }
     }
     &__specialization {
-      font-size: 2rem;
+      font-size: 2.3rem;
       font-weight: 700;
       color: #838383;
       line-height: 3.5rem;
       margin-top: 3rem;
-      letter-spacing: 0.2rem;
+      // letter-spacing: 0.2rem;
     }
   }
   & .social {
@@ -146,8 +155,8 @@
     margin: 0;
     &__intro {
       // margin: 6rem 0;
-      align-self: center;
-      height: max-content;
+      // align-self: center;
+      
       width: 100%;
     }
   }
@@ -166,8 +175,8 @@
  
   .home {
     margin: 0;
-    display: flex;
-    justify-content: center;
+    // display: flex;
+    // justify-content: center;
     &__intro {
       
       &__greeting {

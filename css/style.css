@@ -15,10 +15,12 @@ html {
 body {
   font-family: "Open Sans", sans-serif;
   background: black;
-  color: white;
+  color: #eaeaea;
   box-sizing: border-box;
   line-height: 1.7;
   padding: 0 10rem;
+  display: grid;
+  place-items: center;
 }
 
 body::-webkit-scrollbar {
@@ -68,6 +70,8 @@ body::-webkit-scrollbar-thumb {
   left: 0;
   height: 10rem;
   background: black;
+  font-family: "Fira Mono", monospace;
+  color: #f2f2f2;
 }
 
 .nav-item-container {
@@ -79,11 +83,15 @@ body::-webkit-scrollbar-thumb {
 }
 .nav-item-container .nav-logo {
   flex: 1;
-  font-size: 2.5rem;
+  font-size: 2rem;
+}
+.nav-item-container .nav-logo h1 {
+  font-family: "Fira Mono", monospace;
+  font-weight: 400;
 }
 .nav-item-container .nav-logo span {
   color: #8064da;
-  font-weight: 800;
+  margin: 0 0.5rem;
 }
 .nav-item-container .nav-links {
   display: flex;
@@ -128,7 +136,7 @@ body::-webkit-scrollbar-thumb {
 }
 .nav-item-container button:hover {
   background: #8064da;
-  color: #fff;
+  color: #f2f2f2;
 }
 .nav-item-container .menu-wrap {
   display: none;
@@ -219,7 +227,7 @@ body::-webkit-scrollbar-thumb {
 }
 .resume-download-btn:hover {
   background: #8064da;
-  color: #fff;
+  color: #f2f2f2;
 }
 
 @media only screen and (max-width: 1100px) {
@@ -312,6 +320,8 @@ body::-webkit-scrollbar-thumb {
   height: 100vh;
   min-height: 100vh;
   margin: 0rem 5rem;
+  font-weight: 700;
+  font-family: "Fira Mono", monospace;
   display: flex;
 }
 .home__main {
@@ -322,36 +332,37 @@ body::-webkit-scrollbar-thumb {
 }
 .home__intro {
   align-self: center;
-  height: max-content;
+  height: 70%;
   width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .home__intro__greeting {
   font-size: 3rem;
-  font-weight: 700;
   color: #8064da;
-  letter-spacing: 0.2rem;
 }
 .home__intro__name {
-  font-size: 8rem;
-  font-weight: 600;
+  font-size: 7rem;
   font-family: "Product Sans Regular", "Open Sans", sans-serif;
+  font-stretch: semi-expanded;
 }
 .home__intro__designation {
   font-size: 5rem;
   font-weight: 700;
   font-family: "Product Sans Regular", "Open Sans", sans-serif;
   line-height: 6rem;
+  flex: 0.5;
 }
 .home__intro__designation span {
   color: #8064da;
 }
 .home__intro__specialization {
-  font-size: 2rem;
+  font-size: 2.3rem;
   font-weight: 700;
   color: #838383;
   line-height: 3.5rem;
   margin-top: 3rem;
-  letter-spacing: 0.2rem;
 }
 .home .social {
   position: fixed;
@@ -431,8 +442,6 @@ body::-webkit-scrollbar-thumb {
     margin: 0;
   }
   .home__intro {
-    align-self: center;
-    height: max-content;
     width: 100%;
   }
 }
@@ -447,8 +456,6 @@ body::-webkit-scrollbar-thumb {
 @media only screen and (max-width: 800px) {
   .home {
     margin: 0;
-    display: flex;
-    justify-content: center;
   }
   .home__intro__greeting {
     font-size: 3rem;
@@ -535,7 +542,7 @@ body::-webkit-scrollbar-thumb {
   transform: translateX(1rem);
 }
 .navigation__checkbox:checked ~ .navigation__background {
-  transform: scale(80);
+  transform: scale(200);
 }
 .navigation__checkbox:checked ~ .navigation__nav {
   opacity: 1;
